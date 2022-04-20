@@ -1,0 +1,19 @@
+Vienlumiere
+
+TODO LIST
+
+-> Refactoring du code en MVC
+Tout le site (sauf le blog) doit d'abord être réécrit en MVC.
+
+-> Stokage des informations 'variable' en bdd
+Reperer les informations qui sont amenée à changer régulièrement.
+Concevoir un stokage en base donnée pour ces informations.
+
+-> Formulaire de contact
+Le formulaire de contact ne fonctionne pas actuellement, il faut revoir la conception sans utiliser Phpmailer
+Revoir la validation côté client et serveur
+Faire envoyer le formulaire en ajax au serveur
+
+-> Trouver une solution pour le blog
+Faire un blog de A à Z est trop de travail, se renseigner du côté de wordpress (sous-domaine Wordpress?)
+
