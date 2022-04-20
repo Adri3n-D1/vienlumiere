@@ -1,0 +1,268 @@
+/*
+vienlumiere.fr - tous droits réservés -
+Créé par Adrien Delcros https://www.webdragon.fr
+Pour Éloïse Delcros https://www.vienlumiere.fr
+*/
+
+/* PAGE BLOG - SECTION AUTEUR */
+#section-blog-author h3 {
+    margin-top: 15px;
+    font-family: 'libre_franklinregular';
+    font-size: 21px;
+    font-weight: normal;
+    color: #5e5e5e;
+    text-align: center;
+}
+#section-blog-author img {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    height: auto;
+    border: 2px solid #e5e5e5;
+    border-radius: 7px;
+    margin: auto;
+}
+#section-blog-author .sep {
+    clear: both;
+}
+#section-blog-author .grp-author {
+    margin-top: 50px;
+}
+#section-blog-author .grp-author:first-child {
+    margin-top: 0;
+}
+/* PAGE BLOG - SECTION DERNIER ARTICLE */
+#section-blog-last-articles .page-content {
+    width: 100%;
+    padding: 0;
+}
+#section-blog-last-articles .box-article {
+    background-color: #343434;
+    padding: 3px 2%;
+}
+#section-blog-last-articles .box-article {
+    margin-top: 40px;
+}
+#section-blog-last-articles .box-article:first-child {
+    margin-top: 0;
+}
+p.article-category {
+    margin-top: 0;
+}
+#section-blog-last-articles .box-article h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: 'ralewaysemibold';
+    font-size: 24px;
+    color: #fff;
+    text-align: center;
+}
+#section-blog-last-articles .sep {
+    width: 50%;
+    max-width: 100px;
+    height: 2px;
+    margin: 21px auto;
+    background-color: #2b2b2b;
+}
+p.summary-article {
+    font-family: 'libre_franklinregular';
+    font-size: 15px;
+    color: #fff;
+}
+.grp-article img {
+    margin: auto;
+    display: block;
+    border-radius: 7px;
+}
+p.article-category,
+p.article-category em,
+p.read-article a,
+p.author-name,
+p.author-name em,
+p.last-update {
+    font-family: 'ubuntu_condensedregular';
+    font-size: 14px;
+}
+p.article-category,
+p.author-name {
+    color: #fff;
+}
+p.read-article a,
+.article-category em {
+    color: #21c4ec;
+}
+p.author-name em {
+    color: #ec223d;
+}
+p.last-update {
+    color: #5e5e5e;
+}
+p.read-article,
+p.author-name,
+p.last-update {
+    text-align: center;
+}
+p.read-article {
+    clear: both;
+}
+p.read-article a:hover {
+    border-color: #21c4ec;
+}
+
+@media screen and (min-width: 340px) {
+
+    /* PAGE BLOG - SECTION AUTEUR */
+    #section-blog-author img {
+        float: left;
+        margin-right: 10px;
+    }
+    #section-blog-author h3 {
+        text-align: left;
+    }
+}
+@media screen and (min-width: 450px) {
+
+    /* PAGE BLOG - SECTION AUTEUR */
+    #section-blog-author p {
+        text-align: justify;
+        font-size: 15px;
+    }
+
+    /* PAGE BLOG - SECTION DERNIER ARTICLE */ 
+    .grp-article img {
+        float: left;
+        margin-right: 17px;
+    }   
+    .footer-article {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 800px) {
+
+    /* PAGE BLOG - SECTION AUTEUR */
+    #section-blog-author img {
+        margin-right: 33px;
+    }
+
+    /* PAGE BLOG - SECTION DERNIER ARTICLE */  
+    .box-article {
+        padding: 0 15px;
+        border-radius: 7px;
+    }
+}
+
+/* PAGE ARTICLE - SECTION HEADER MAIN */
+#section-header-main .page-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#section-header-main p {
+    margin: 5px 0;
+}
+#section-header-main .article-path a,
+#section-header-main .article-path em {
+    font-size: 14px;
+    color: #343434;
+    font-family: 'ubuntu_condensedregular';
+}
+#page-article .article-category {
+    color: #343434;
+}
+
+/* PAGE ARTICLE - SECTION HEADER MAIN */
+#section-article {
+    padding-top: 10px;
+    background-color: #343434;
+}
+#section-article h2,
+#section-article p,
+#section-article ul {
+    color: #fff;   
+}
+#section-article h2{
+    font-size: 21px;
+    text-align: center;
+    padding-left: 0;
+    padding-bottom: 21px;
+    border-bottom: 1px solid #fff;
+}
+#section-article h3 {
+    margin: 40px 0 30px;
+    font-family: 'ubuntulight';
+    color: #21c4ec;
+    text-align: center; 
+}
+#section-article p {
+    font-family: 'libre_franklinregular';
+    line-height: 25px; 
+}
+#section-article p.alt {
+    font-style: italic;
+    text-align: center;
+}
+#section-article a {
+    border-bottom: 1px solid #ec223d;
+}
+#section-article ul {
+    padding: 18px;
+    list-style-image: url("images/fleche_rouge_12x12.png"); 
+    font-family: 'libre_franklinregular';
+}
+#section-article li {
+    margin-bottom: 12px;
+}
+#section-article li:last-child {
+    margin-bottom: 0;
+}
+#section-article .article-drawing {
+    padding-top: 40px;
+}
+#section-article .article-drawing img {  
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+#article-end {
+    padding-bottom: 40px;
+}
+.article-section-poem {
+    max-width: max-content;
+    margin: auto;
+}
+#section-article .article-section-poem p{
+    padding-left: 10px;
+    line-height: 25px;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+.calligraphy {
+    margin-left: -10px;
+    font-family: 'great_vibesregular';
+    font-size: 42px;
+    /* color: #21c4ec; */
+}
+br.double {
+    margin-bottom: 50px !important;
+}
+
+
+@media screen and (min-width: 450px) {
+    #section-article h2{
+        font-size: 25px;
+    }
+    #section-article .article-section-generic p {
+        text-align: justify;  
+    }
+}
+@media screen and (min-width: 600px) {
+    #section-article h2{
+        border: 0;
+        padding-bottom: 0;
+    }
+    #section-article h3 {
+        padding-left: 40px; 
+        text-align: left; 
+    }
+}

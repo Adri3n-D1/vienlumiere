@@ -1,0 +1,606 @@
+/*
+vienlumiere.fr - tous droits réservés -
+Créé par Adrien Delcros https://www.webdragon.fr
+Pour Éloïse Delcros https://www.vienlumiere.fr
+*/
+
+/* SITE - GÉNÉRAL */
+body {
+    margin: 0;
+}
+a, h1, h2, h3, p, li, p, div, em, strong, input {
+    word-break: break-word;
+    -ms-hyphens: auto;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+    margin: 0;   
+}
+p, a, ul {
+    font-family: 'ralewayregular';
+    font-size: 16px;
+    color: #5e5e5e;
+    text-decoration: none;
+}
+em {
+    font-family: 'ralewaylight';
+    color: #0d9b6c;
+    font-style: normal;
+}
+em.alt {
+    color: #bd8787;
+    font-style: italic;
+}
+.page-content {
+    padding: 0 2%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+/* HEADER - BANNIÈRE DU SITE */
+#site-header-banner {
+    background-color: #343434;
+}
+#site-header-banner .page-content {
+    text-align: center;
+}
+#site-header-banner img{
+    margin: 5px 0;
+}
+#site-header-banner .duo img {
+    margin-right: 2px;
+}
+#site-header-banner a {
+    font-family: 'ubuntu_condensedregular';
+    color: #fff;
+}
+#site-header-banner a:hover {
+    color: #ec223d;
+    transition: color 1.2s;
+}
+#site-header-banner a, #site-header-banner img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* HEADER - LOGO DU SITE */
+#site-header-logo {
+    padding: 20px 0;
+    text-align: center;
+    font-family: 'great_vibesregular';
+    font-size: 33vw;
+    line-height: 1;
+}
+/* Transition entre les deux logos au passage de la souris */
+#site-header-logo {
+    position: relative;
+    height: 60vw;
+}
+#site-header-logo #site-logo-1,
+#site-header-logo #site-logo-2 {
+    width: 100%;
+    position: absolute;
+}
+#site-header-logo #site-logo-1,
+#site-header-logo:hover #site-logo-2 {
+    color: #343434;
+    transition: color 1.2s;
+}
+#site-header-logo:hover #site-logo-1,
+#site-header-logo #site-logo-2 {
+    color: #34343400;
+    transition: color 1.2s;
+}
+
+/* HEADER - MENU DU SITE */
+/* Le menu apparait en bas et en liste tant que la largeur est trop petite, si javascript est activé sur le navigateur, alors un script cache/dévoile le menu au clique sur l'icone du menu */
+#site-header-grp-menu {
+    display: flex;
+    flex-direction: column-reverse;
+}
+/* Le padding est retiré pour que l'arrière plan s'affiche sur toute le largeur de la page */
+#site-header-menu .page-content {
+    padding: 0;
+}
+#site-header-menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0;
+}
+/* chaque élément de la liste est un block pour qu'il s'étale sur toute la page */
+#site-header-menu a {
+    display: block;
+    margin: 2px 0;
+    padding: 5px 0;
+    text-align: center;
+    font-family: 'libre_franklinthin';
+    font-size: 20px;
+    color: #fff;
+    color: #777777;
+    font-weight: bold;
+    background-color: #e5e5e5;
+}
+#site-header-menu a:hover {
+    color: #343434;
+    background-color: #f5f5f5;
+}
+#site-header-menu .curent-page a {
+    cursor: default;
+}
+
+/* HEADER - TITRE DE LA PAGE */
+#site-header-page-title {
+    padding: 12px 0;
+    font-family: 'ralewaysemibold';
+    font-size: 16px;
+    color: #fff;
+    background-color: #ec223d;
+    text-align: center;
+}
+h1 {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+/* Si js n'est pas activé, sinon js l'affichera en inline-block */
+#box-icon-header-menu {
+    display: none;
+    margin: auto 0;
+}
+/* Si flex n'est pas pris en charge */
+h1, #icon-header-menu {
+    display: inline-block;
+    vertical-align: middle;
+}
+/* Le titre et l'icone du menu sont positionné sur la même ligne */
+#site-header-page-title .page-content img {
+    padding-top: 8px;
+}
+#site-header-page-title .page-content {
+    max-width: 400px;
+    display: flex;
+    justify-content: space-around;
+}
+#icon-header-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* SECTION - NAV */
+#site-nav {
+    margin: 40px auto 0;
+    background-color: #e5e5e5;
+}
+#site-nav .page-content {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#site-nav h2, #site-nav h3, #site-nav a  {
+    font-family: 'ubuntu_condensedregular';
+}
+#site-nav h2 {
+    margin-bottom: 21px;
+    font-size: 19px;
+    font-weight: normal;
+    text-align: center;
+    color: #343434;
+}
+#site-nav h3 {
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: normal;
+    color: #5e5e5e;
+}
+#site-nav a {
+    font-size: 14px;
+    color: #ec223d;
+}
+#site-nav a:hover {
+    border-bottom: 1px solid #ec223d;
+}
+#site-nav li.curent-page:hover,
+#site-nav li.curent-page:hover a {
+    color: #5e5e5e;
+    border: 0;
+    cursor: default;
+}
+#site-nav ul {
+    padding-left: 15px;
+    margin: 0;
+    color: #ec223d;
+    list-style-type: "-  ";
+}
+#site-nav .grp-col {
+    max-width: max-content;
+    margin: auto;
+}
+
+/* FOOTER - PARTIE HAUTE */
+#site-footer-top {
+    padding: 10px 0;
+    background-color: #ec223d;
+    color: #fff;
+}
+#site-footer-top a,
+#site-footer-top p {
+    font-family: 'ubuntu_condensedregular';
+    font-size: 15px;
+    color: #343434;
+}
+#site-footer-top li:hover {
+    color: #fff;
+    transition: all 1.2s;
+}
+#site-footer-top a:hover,
+#site-footer-top li:hover a {
+    color: #fff;
+    transition: color 1.2s;
+}
+#site-footer-top h2 {
+    margin-top: 4px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-family: 'ubuntu_condensedregular';
+    font-size: 18px;
+    font-weight: normal;
+    color: #fff;  
+}
+#site-footer-top li {
+    margin-top: 1px;  
+}
+#site-footer-top ul {
+    max-width: 167px;
+    margin: 0 auto;
+    padding-left: 15px;
+    color: #343434;
+    list-style-type: "-  ";
+}
+
+/* FOOTER - PARTIE HAUTE - CONTACT */
+#site-footer-contact {
+    text-align: center;
+    margin-bottom: 33px;
+}
+#site-footer-contact .duo {
+    border-bottom: 1px solid #343434;
+    padding: 4px 0;
+}
+#site-footer-contact .duo:last-child {
+    border-bottom: 0
+}
+#site-footer-contact img {
+    height: 50px;
+}
+#site-footer-contact .box-txt {
+    vertical-align: middle;
+    text-align: center;
+}
+#site-footer-contact .box-img {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* FOOTER - PARTIE HAUTE - LIENS */
+#site-footer-link-in,
+#site-footer-link-out {
+    border-top: 1px solid #fff;
+    padding-bottom: 15px;
+}
+#site-footer-link-out img {
+    margin-left: 3px;
+    margin-bottom: 2px;
+    vertical-align: middle;
+}
+
+/* FOOTER - PARTIE BASSE */
+#site-footer-bottom {
+    background-color: #343434;
+    text-align: center;
+    padding: 10px 0;
+}
+#site-footer-bottom a ,
+#site-footer-bottom p {
+    font-family: 'ubuntu_condensedregular';
+    font-size: 14px;
+}
+#site-footer-bottom a {
+    border-bottom: 1px solid #474747;
+    padding-bottom: 1px;
+}
+#site-footer-bottom a:hover {
+    color: #e5e5e5;
+    border-color: #e5e5e5;
+    transition: all 1.2s;
+}
+#site-footer-credit-adn .except {
+    border: 0;
+}
+#site-footer-bottom .sep {
+    width: 2px;
+    height: 2px;
+    margin: 9px auto 5px;
+    background-color: #5e5e5e;
+}
+#site-footer-credit-adn p{
+    display: inline-block;
+}
+#site-footer-credit-vienlumiere {
+    display: flex;
+    justify-content: center;
+}
+#site-footer-credit-vienlumiere p {
+    margin: 0 5px;
+}
+#site-footer-credit-adn .box-img img {
+    margin-bottom: -3px;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 200px) {
+    
+    /* HEADER - LOGO DU SITE */
+    /* La police du logo devient fixe, la hauteur également */
+    #site-header-logo {
+        font-size: 65px;
+        height: 130px;
+    }
+
+    /* FOOTER - PARTIE HAUTE */
+    #site-footer-contact .box-txt {
+        display: inline-block;
+        vertical-align: middle;
+        width: 165px;
+        text-align: left;
+    }
+}
+@media screen and (min-width: 340px) {
+
+    /* HEADER - BANNIÈRE DU SITE */
+    /* La bannière s'affiche verticalemnt */
+    #site-header-banner .page-content {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    /* HEADER - LOGO DU SITE */
+    /* Le logo du site s'affiche sur une ligne */
+    #site-header-logo br {
+        display: none;
+    }
+    #site-header-logo {
+        margin-top: 4px;
+        height: 55px;
+    }
+
+    /* SECTION - NAV */
+    #site-nav .page-content{
+        max-width: 400px;
+    }
+    #site-nav .grp-col {
+        max-width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    #site-nav .grp-link {
+        vertical-align: top;
+        display: inline-block;
+        max-width: max-content;
+    }
+
+    /* FOOTER - PARTIE HAUTE */
+    #site-footer-link {
+        display: flex;
+        justify-content: space-around;
+    }
+    #site-footer-contact {
+       margin-bottom: 15px;
+    }
+    #site-footer-link-in,
+    #site-footer-link-out {
+        border-top: 0;
+        padding-bottom: 0;
+        margin-bottom: 15px;
+    }
+}
+@media screen and (min-width: 450px) {
+
+    /* FOOTER - PARTIE HAUTE */
+    #site-footer-top .page-content{
+        display: flex;
+        justify-content: space-between;
+    }
+    #site-footer-contact {
+        margin-bottom: 0;
+    }
+    #site-footer-contact .duo {
+        padding: 5px 0;
+    }
+    #site-footer-link {
+        flex-direction: column;
+        justify-content: start;
+        width: 45%;
+    }
+    #site-footer-link-in,
+    #site-footer-link-out {
+        border-top: 0;
+        padding-bottom: 0;
+    }
+    #site-footer-link-in,
+    #site-footer-link-out {
+        margin-bottom: 0;
+    }
+    #site-footer-link-in {
+        margin-bottom: 8px;
+    }
+
+    /* FOOTER - PARTIE BASSE */
+    #site-footer-vienlumiere {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    #site-footer-bottom .sep-vienlumiere {
+        margin: 8px 10px;
+        width: 5px;
+        height: 1px;
+    }
+    #site-footer-credit-vienlumiere p {
+        margin: 0;
+    }
+    #site-footer-credit-vienlumiere p:first-child {
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width: 600px) {
+
+
+    /* HEADER - BANNIÈRE DU SITE */
+    /* La bannière se positionne à la fin */
+    #site-header-banner .page-content {
+        justify-content: flex-end;
+    }
+    #site-header-banner .duo {
+        margin-right: 21px;
+    }
+
+    /* HEADER - LOGO DU SITE */
+    #site-header-logo {
+        margin-top: 13px;
+        height: 80px;
+        font-size: 80px;
+    }
+
+    /* SECTION - NAV */
+    #site-nav {
+        margin-bottom: 40px;
+        max-width: 500px;
+    }
+    
+    /* FOOTER - PARTIE HAUTE */
+    #site-footer-contact .duo {
+        padding: 3px 0;
+    }
+    #site-footer-link {
+        margin-right: 3%;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 321px;
+        height: 250px;
+        background: 50% -120% / 500px url("images/lotus-blanc.png") no-repeat;
+    }
+
+    /* FOOTER - PARTIE BASSE */
+    #site-footer-bottom .page-content {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    #site-footer-bottom .sep-adn {
+        margin: 8px 10px;
+    }
+    #site-footer-credit-adn {
+        display: flex;
+        flex-direction: row;
+    }
+    #site-footer-credit-adn p:first-child {
+        margin-right: 5px;
+    }
+}
+@media screen and (min-width: 800px) {
+
+    /* SITE - GÉNÉRAL */
+    /* Le contenu de la page est ajusté */
+    .page-content {
+        max-width: 800px;
+        padding: 0 15px;
+    }
+
+    /* HEADER - MENU DU SITE */
+    /* Le menu s'affiche en rangée et avant le titre de la page */
+    #site-header-grp-menu {
+        flex-direction: column;
+    }
+    /* Les puces occupe seuleument l'espace nécessaire au texte */
+    #site-header-menu li {
+        display: inline-block;
+        margin: 0 10px;
+    }
+    #site-header-menu ul {
+        text-align: center;
+        margin: 0 auto 21px auto;
+    }
+    /* Le texte est stylisé */
+    #site-header-menu a {
+        border-bottom: 1px solid #fff;
+        color: #5e5e5e;
+        background-color: #fff;
+        font-weight: normal;
+    }
+    #site-header-menu a:hover {
+        border-color: #ec223d;
+        color: #ec223d;
+        transition: all 1s;
+        background-color: #fff;
+    }
+    #site-header-menu .curent-page a {
+        color: #5e5e5e;
+        border-bottom: 1px solid #f0f0f0;
+    }
+
+    /* HEADER - TITRE DE LA PAGE */
+    /* L'icone du menu ne s'affiche plus */
+    #icon-header-menu {
+        display: none;
+    }
+    /* Le titre de la page prend toute la largeur */
+    #site-header-page-title .page-content {
+        display: block;
+    }
+
+    /* FOOTER - PARTIE HAUTE */
+    #site-footer-link {
+        height: unset;
+        max-width: 310px;
+        margin-right: 0;
+        background: none;
+    }
+    #site-footer-contact {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 500px;
+    }
+    #site-footer-contact .duo:nth-child(1) {
+        order: 1;
+        margin-right: 21px;
+    }
+    #site-footer-contact .duo:nth-child(2) {
+        order: 2;
+    }
+    #site-footer-contact .duo:nth-child(3) {
+        order: 4;
+    }
+    #site-footer-contact .duo:nth-child(4) {
+        order: 3;
+        margin-right: 21px;
+    }
+    #site-footer-contact .duo {
+        border: none;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    /* SITE - GÉNÉRAL */
+    /* Le contenu de la page est ajusté */
+    .page-content {
+        max-width: 1200px;
+        padding: 0 20px;
+    }
+    
+    /* FOOTER - PARTIE HAUTE */
+    /* Cette section à atteint sa largeur maximum */
+    #site-footer-top .page-content {
+        max-width: 800px;
+        padding: 0 15px;
+    }
+}

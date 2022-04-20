@@ -1,0 +1,682 @@
+/*
+vienlumiere.fr - tous droits réservés -
+Créé par Adrien Delcros https://www.webdragon.fr
+Pour Éloïse Delcros https://www.vienlumiere.fr
+*/
+
+/* SECTION - MAIN */
+main p, main ul {
+    margin-top: 17px;
+    line-height: 23px;
+}
+main h2 {
+    font-family: 'ubuntu_condensedregular';
+    font-size: 25px;
+    font-weight: normal;
+    color: #ec223d;
+    margin: 40px 0 30px;
+    text-align: center;
+}
+main a {
+    font-family: 'ubuntu_condensedregular';
+    color: #ec223d;
+    border-bottom: 1px solid #ec223d00;
+}
+main a:hover {
+    border-color: #ec223d;
+    transition: border-color 1.2s;
+}
+img.img-rotate:hover {
+    transform: rotate(180deg);
+    transition: height 1s, width 1s, all ease-in-out 1s;
+}
+.hidden {
+    display: none;
+}
+/* SECTION - INTRO */
+#section-intro {
+    text-align: center;
+    font-style: italic;
+    color: #5e5e5e;
+}
+#section-intro img {
+    max-width: 100%;
+    margin: 20px 0 20px 0;
+    border-radius: 21px;
+    vertical-align: middle;
+}
+#section-intro p {
+    margin-top: 10px;
+}
+#section-intro em {
+    font-style: italic;
+}
+/* L'image sera choisi selon la taille de l'écran */
+#section-intro.double-img .element-2 {
+    display: none;
+}
+
+/* BACKGROUND DE PAGE */
+#page-background {
+    background-image:
+        linear-gradient(to bottom, #fff, #ffffff00),
+        linear-gradient(to top, #fff, #ffffff00),
+        url("images/bokeh-800px_2.jpg");
+    background-position: top, bottom, center;
+    background-size: 100% 5%, 100% 5%, cover;
+    background-repeat: no-repeat, no-repeat, no-repeat;
+    padding-top: 10px;
+    margin-top: -10px;
+    padding-bottom: 30px;
+    margin-bottom: -30px;
+}
+
+/* SECTION - GÉNÉRIQUE */
+.section-generic ul {
+    padding-left: 20px;
+    list-style-type: "-   ";
+}
+.section-generic li {
+    margin-top: 10px;
+}
+
+/* SECTION - LÉGAL */
+#legal p {
+    color: #c4c4c4;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* SECTION - DÉMARCHE */
+#section-step h3 {
+    margin-top: 17px;
+    font-family: 'ralewayregular';
+    font-size: 17px;
+    font-weight: normal;
+    color: #21c4ec;
+}
+#section-step em {
+    color: #868585;
+    font-style: italic;
+    font-family: 'ralewaylight';
+}
+#section-step p {
+    margin-top: 5px;
+}
+
+/* SECTION - TARIF */
+#section-rate strong {
+    font-family: 'ubuntu_condensedregular';
+    font-size: 15px;
+    color: #000;
+    font-weight: normal;
+}
+#section-rate p.alt {
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: italic;
+    font-weight: bold;
+}
+#section-rate ul p{
+    margin-top: 0;
+    font-family: 'ubuntu_condensedregular';
+    text-align: center;
+}
+#section-rate ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 180px;
+    list-style-type: none;
+    padding: 0;
+}
+#section-rate li {
+    margin: 0 15px 10px;
+}
+
+/* PAGE ACCUEIL - SECTION PRESTATION */
+#section-services h3 {
+    padding: 7px 0;
+    margin: 20px 0 15px;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    font-family: 'ubuntulight';
+    font-size: 18px;
+    font-weight: bold;
+    color: #5e5e5e;
+    text-align: center;
+}
+#section-services p.alt {
+    padding-bottom: 1px;
+    font-family: 'ubuntu_condensedregular';
+    font-size: 15px;
+    color: #000;
+}
+#section-services p.alt a {
+    font-size: 15px;
+}
+
+/* PAGE ACCUEIL - SECTION CONTACT + TARIF  */
+#section-grp-contact-rate {
+    display: flex;
+    flex-direction: column;
+}
+
+/* PAGE ACCUEIL - SECTION CONTACT */
+#section-home-contact p,
+#section-home-contact a {
+    font-size: 15px;
+}
+#section-home-contact .duo {
+    margin-top: 12px;
+}
+#section-home-contact .duo p,
+#section-home-contact .duo img {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+#section-home-contact .duo a {
+    font-family: 'ralewayregular';
+    color: #5e5e5e;
+    border-bottom: 1px solid #f2f2f2;
+}
+#section-home-contact .duo a:hover {
+    color: #ec223d;
+    border-color: #ec223d;
+    transition: all 1.2s; 
+}
+
+/* PAGE ACCUEIL - SECTION TARIF  */
+#section-home-rate .box-txt {
+    list-style-image: url("images/fleche_rouge_12x12.png");
+    padding-left: 24px;
+}
+#section-home-rate .box-txt li {
+    color: #5e5e5e;
+    margin-bottom: 17px;
+    font-size: 15px;
+}
+#section-home-rate em {
+    color: #21c4ec;
+}
+#section-home-rate p.alt {
+    font-family: 'ubuntu_condensedregular';
+    font-size: 15px;
+}
+#section-home-rate .box-img {
+    max-width: 250px;
+    padding: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+#section-home-rate .box-img p {
+    margin-top: 0;
+    font-family: 'ubuntu_condensedregular';
+    text-align: center;
+}
+
+/* PAGE CONTACT - SECTION FORM  */
+#section-contact-form form {
+    max-width: 100%;
+}
+#section-contact-form label.large-display {
+    display: none;
+}
+#section-contact-form label.small-display,
+#section-contact-form label.all-display {
+    display: block;
+    padding: 7px;
+    border-radius: 7px 7px 0 0;
+    margin-bottom: -1px;
+    text-align: center;
+    font-family: 'ubuntu_condensedregular';
+    color: #fff;
+    background-color: #343434;
+}
+#section-contact-form input,
+#section-contact-form textarea {
+    box-sizing: border-box;
+    max-width: 100%;
+    width: 100%;
+    padding: 7px;
+    border: 0;
+    border-radius: 0 0 7px 7px;
+    background-color: #e5e5e5;
+}
+#section-contact-form .required {
+    outline: 1px solid #ec223d;
+}
+#section-contact-form .required:hover {
+    outline: 1px solid #ecce22;
+}
+#section-contact-form .completed {
+    outline: 1px solid #4dc728;
+}
+#section-contact-form .completed:hover {
+    outline: 1px solid #288dc7;
+}
+#section-contact-form input {
+    height: 37px;
+    text-align: center;
+}
+#section-contact-form textarea {
+    height: 190px;
+    resize: none;
+}
+#section-contact-form .btn-submit input {
+    display: block;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #343434;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+}
+#section-contact-form .btn-submit input:hover {
+    cursor: pointer;
+}
+#section-contact-form input:focus,
+#section-contact-form textarea:focus {
+    color: #343434;
+    font-weight: bold;
+    outline-color: #ec223d;
+    background-color: #fff;
+}
+#section-contact-form .display-error p {
+    padding: 7px;
+    margin-top: 0;
+    text-align: center;
+    font-family: 'ubuntu_condensedregular';
+    font-size: 14px;
+    color: #ec223d;    
+}
+#section-contact-form .send {
+    background-color: #5e5e5e;
+    color: #fff;
+    font-weight: bold;
+}
+#section-contact-form .btn-submit input:disabled:hover {
+    /* cursor: default; */
+}
+
+#section-contact-form-send table {
+    margin: auto;
+    max-width: 400px;
+    font-family: 'ubuntu_condensedregular';
+}
+#section-contact-form-send tr {
+    display: inline-block;
+    margin-bottom: 2px;
+    width: 100%;
+    outline: 0;
+}
+#section-contact-form-send tr:nth-child(even) {
+    background-color: #e5e5e5;
+    color: #343434;
+}
+#section-contact-form-send tr:nth-child(odd) {
+    background-color: #343434;
+    color: #e5e5e5;
+}
+#section-contact-form-send td:first-child {
+    width: 100px;
+    border-right: 2px solid #fff;
+    margin: 0;
+}
+#section-contact-form-send td {
+    padding: 7px;
+    margin: 0;
+}
+#section-contact-form-send .btn-double {
+    max-width: 160px;
+    width: 100%;
+    height: 37px;
+    border: 0;
+    border-radius: 7px;
+    font-weight: bold;
+    color: #fff;
+}
+#section-contact-form-send .btn-double {
+    text-align: center;
+    cursor: pointer;
+}
+#section-contact-form-send .btn-double:first-child {
+    background-color: #ec223d;
+}
+#section-contact-form-send .btn-double:last-child {
+    background-color: #343434;
+    border: 0;
+}
+#section-contact-form-send .duo {
+    margin: 21px auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 400px;
+}
+@media screen and (min-width: 800px) {
+    #section-contact-form-send tr:last-child td:last-child {
+        height: 220px;
+    }
+}
+@media screen and (min-width: 340px) {
+
+    /* PAGE CONTACT - SECTION FORM  */
+    #section-contact-form form {
+        width: 280px;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    #section-contact-form label.small-display {
+        display: none;
+    }
+    #section-contact-form input,
+    #section-contact-form .duo label.large-display {
+        display: inline-block;
+        vertical-align: bottom;
+    }
+    #section-contact-form .duo label.large-display {
+        min-width: 90px;
+        width: 90px;
+        height: 37px;
+        padding: 7px;
+        border-radius: 7px 0 0 7px;
+        margin-right: -5px;
+        box-sizing: border-box;
+        font-family: 'ubuntu_condensedregular';
+        color: #fff;
+        background-color: #343434;
+    }
+    #section-contact-form input {
+        display: inline-block;
+        width: 190px;
+        border-radius: 0 7px 7px 0;
+    }
+    #section-contact-form .display-error {
+        margin-left: 90px;
+    }
+    #section-contact-form div.display-error.center {
+        margin-left: 0;
+    }
+}
+@media screen and (min-width: 450px) {
+
+    /* PAGE CONTACT - SECTION FORM  */
+    #section-contact-form form {
+        width: 400px;
+    }
+    #section-contact-form input {
+        width: 310px;
+    }
+    #section-contact-form textarea {
+        width: 400px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    /* PAGE CONTACT - SECTION FORM  */
+    #section-contact-form form {
+        width: 500px;
+    }
+    #section-contact-form {
+        max-width: 530px;
+    }
+    #section-contact-form input {
+        width: 410px;
+    }
+    #section-contact-form textarea {
+        width: 500px;
+        height: 150px;
+    }
+}
+
+
+/* PAGE CONTACT - SECTION INFO  */
+#section-contact-info .content {
+    max-width: 300px;
+    margin: 0 auto;
+}
+#section-contact-info p,
+#section-contact-info a {
+    font-size: 15px;
+    color: #343434;
+}
+#section-contact-info .duo p,
+#section-contact-info .duo img {
+    margin: 0;
+    display: inline-block;
+    vertical-align: middle;
+}
+#section-contact-info .duo a {
+    font-family: 'ralewayregular';
+    border-bottom: 1px solid #f2f2f2;
+}
+#section-contact-info .duo a:hover {
+    color: #ec223d;
+    border-color: #ec223d;
+    transition: all 1.2s; 
+}
+#section-contact-info .duo {
+    margin-bottom: 21px;
+}
+#section-contact-info .duo img {
+    height: 45px;
+}
+#section-contact-info p.alt {
+    font-family: 'ubuntu_condensedregular';
+    text-align: center;
+}
+#section-contact-info p.alt a{
+    color: #ec223d;
+}
+
+@media screen and (min-width: 450px) {
+
+    /* PAGE CONTACT - SECTION INFO  */
+    #section-contact-info .content {
+        max-width: 550px;
+    }
+    #section-contact-info .box {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media screen and (min-width: 800px) {
+
+    /* PAGE CONTACT - SECTION INFO  */
+    #section-grp-form-info .page-content {
+        display: flex;
+        justify-content: space-between;
+    }
+    #section-contact-info .content {
+        max-width: 300px;
+        margin: 0;
+    }
+    #section-contact-info .box {
+        display: block;
+    }
+    #section-contact-info .grp {
+        display: flex;
+        flex-direction: column;
+    }
+    #section-contact-info .grp:first-child .duo:first-child {
+        margin-top: 10px;
+    }
+    #section-contact-info .duo {
+        margin-bottom: 32px;
+    }
+    #section-contact-info .grp:first-child .duo:first-child,
+    #section-contact-info .grp:first-child .duo:nth-child(2) {
+        margin-bottom: 40px;
+    }
+    #section-contact-info p.alt {
+        margin-top: 35px;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    /* PAGE CONTACT - SECTION INFO  */
+    #section-contact-info .content {
+        max-width: 550px;
+    }
+    #section-contact-info .box {
+        display: flex;
+        justify-content: space-between;
+    }
+    #section-contact-info .grp:first-child .duo:first-child,
+    #section-contact-info .grp:nth-child(2) .duo:first-child {
+        margin-top: 10px;
+    }
+    #section-contact-info .duo:first-child {
+        margin-bottom: 42px;
+    }
+    #section-contact-info {
+        background: center 140% / 100% auto url("images/lotus-blanc.png") no-repeat;
+    }
+}
+
+/* PAGE CONTACT - SECTION LOCATION  */
+.sep-location {
+    margin-top: 30px;
+    width: 100%;
+    height: 5px;
+    background-color: #ec223d;
+}
+.sep-location:last-child {
+    height: 1px;
+    margin-top: 0;
+    background-color: #343434;
+}
+#section-location {
+    width: 100%;
+    height: 370px;
+}
+#section-location a {
+    font-size: 11px;
+}
+#section-location .leaflet-popup-content {
+    margin: 10px 15px;
+}
+
+
+@media screen and (min-width: 200px) {
+
+    /* SECTION - TARIF */
+    #section-rate ul {
+        justify-content: space-between;
+        max-width: max-content;
+    }
+    #section-rate li {
+        margin: 0 7px;
+    }
+    #section-rate li:first-child {
+        margin-left: 0;
+    }
+    #section-rate li:last-child {
+        margin-right: 0;
+    }
+
+    /* PAGE ACCUEIL - SECTION CONTACT */
+    #section-home-contact .duo img {
+        margin-right: 3px;
+    }
+}
+@media screen and (min-width: 340px) {
+
+    /* SECTION - INTRO */
+    #section-intro.double-img .element-1 {
+        display: none;
+    }
+    #section-intro.double-img .element-2 {
+        display: inline-block;
+    }
+
+    /* SECTION - TARIF */
+    #section-rate .page-content {
+        background: 90% 100%/ auto 50% url("images/meditation-rouge.png") no-repeat;
+    }
+
+    /* PAGE ACCUEIL - SECTION CONTACT */
+    #section-home-contact .duo img {
+        margin-right: 10px;
+    }
+}
+@media screen and (min-width: 450px) {
+
+    /* SECTION - TARIF */
+    #section-rate .page-content {
+        background-position: 70% 100%;
+    }
+}
+@media screen and (min-width: 600px) {
+
+    /* SECTION - MAIN */
+    main h2 {
+        padding-left: 40px;
+        text-align: left;
+    }
+
+    /* SECTION - TARIF */
+    #section-rate .page-content {
+        background-image:
+            url("images/courbe_point_gris_001.png"),
+            url("images/meditation-rouge.png"),
+            url("images/courbe_point_gris_001.png");
+        background-position: 45% 75%, 70% 100%, 92% 75%;
+        background-size: 15% auto, auto 60%, 15% auto;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+
+    /* PAGE ACCUEIL - SECTION CONTACT + TARIF */
+    #section-grp-contact-rate .page-content {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    #section-home-contact,
+    #section-home-rate {
+        max-width: max-content;
+    }
+}
+@media screen and (min-width: 800px) {
+
+    /* SECTION - BACKGROUND */ 
+    #page-background {
+        background-image:
+            linear-gradient(to bottom, #fff, #ffffff00),
+            linear-gradient(to top, #fff, #ffffff00),
+            url("images/bokeh-2072271.jpg");
+        background-position: top, bottom, center;
+        background-size: 100% 40%, 100% 40%, cover;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+    }
+
+    /* SECTION - DÉMARCHE */
+    #section-step .content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    #section-step .grp-step {
+        width: 45%;
+        text-align: justify;
+    }
+}
+@media screen and (min-width: 1200px) {
+
+    /* SECTION - TARIF */
+    #section-rate .page-content {
+        background-position: 55% 75%, 70% 100%, 85% 75%;
+        background-size: 10% auto, auto 65%, 10% auto;
+    }
+
+    /* PAGE ACCUEIL - SECTION CONTACT + TARIF */
+    #section-grp-contact-rate {
+        background: 50% 80% / 200px url("images/meditation-gris.png") no-repeat;
+    }
+}
